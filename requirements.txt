@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+streamlit
+langchain
+sentence-transformers
+faiss-cpu
+pydantic
+sqlalchemy
+psycopg2-binary
+python-multipart
+python-dotenv
+PyMuPDF
+numpy
+pandas

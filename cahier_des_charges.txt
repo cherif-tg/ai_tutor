@@ -1,0 +1,150 @@
+# Cahier des charges – Tuteur IA académique
+
+## 1. Contexte et justification
+
+Dans le cadre des études universitaires (mathématiques, physique, informatique, IA), les étudiants rencontrent des difficultés de compréhension, de révision et d'entraînement autonome. L'objectif de ce projet est de concevoir un **tuteur intelligent basé sur l'intelligence artificielle** capable d'assister les étudiants de manière personnalisée, interactive et pédagogique.
+
+Ce projet vise également à permettre au porteur du projet de renforcer ses compétences en IA, en génie logiciel et en architectures modernes (API, RAG, bases de données).
+
+---
+
+## 2. Objectifs du projet
+
+### Objectif général
+
+Mettre en place une application de tuteur IA capable d'aider les étudiants dans leurs apprentissages universitaires.
+
+### Objectifs spécifiques
+
+* Fournir des explications pédagogiques pas à pas
+* Répondre aux questions en langage naturel
+* Exploiter les cours locaux (PDF) comme source fiable
+* Générer des exercices et des révisions
+* S'adapter au niveau académique de l'étudiant
+
+---
+
+## 3. Périmètre du projet
+
+### Inclus
+
+* Interface web (chat)
+* Backend API
+* Moteur RAG
+* Gestion des utilisateurs
+* Historique des conversations
+
+### Exclus
+
+* Entraînement de modèles IA lourds
+* Application mobile native
+
+---
+
+## 4. Description fonctionnelle
+
+### 4.1 Fonctionnalités principales
+
+1. **Chat intelligent**
+
+   * Questions en langage naturel
+   * Réponses contextualisées
+
+2. **Gestion des cours**
+
+   * Upload de fichiers PDF
+   * Indexation automatique
+
+3. **Module pédagogique**
+
+   * Explications progressives
+   * Adaptation au niveau (L1/L2/L3)
+
+4. **Gestion utilisateur**
+
+   * Authentification
+   * Historique personnel
+
+---
+
+## 5. Architecture technique
+
+### 5.1 Architecture globale
+
+* Frontend : Streamlit
+* Backend : FastAPI
+* IA : LLM externe + RAG local
+* Base de données : PostgreSQL + FAISS
+
+### 5.2 Pipeline RAG
+
+1. Extraction texte PDF
+2. Découpage en chunks
+3. Génération d'embeddings
+4. Indexation FAISS
+5. Recherche contextuelle
+6. Génération de réponse
+
+---
+
+## 6. Spécifications techniques
+
+### Langage
+
+* Python 3.10+
+
+### Bibliothèques principales
+
+* fastapi
+* streamlit
+* sentence-transformers
+* faiss-cpu
+* langchain
+* sqlalchemy
+* psycopg2
+
+---
+
+## 7. Contraintes
+
+* Utilisation d'un PC personnel (CPU only)
+* Budget limité
+* Dépendance partielle à une API IA
+
+---
+
+## 8. Livrables
+
+* Code source (GitHub)
+* Cahier des charges
+* Documentation technique
+* Démonstration fonctionnelle
+
+---
+
+## 9. Planning prévisionnel
+
+| Phase                | Durée      |
+| -------------------- | ---------- |
+| Analyse & conception | 1 semaine  |
+| Développement RAG    | 2 semaines |
+| API & Frontend       | 2 semaines |
+| Tests & doc          | 1 semaine  |
+
+---
+
+## 10. Critères de réussite
+
+* Application fonctionnelle
+* Réponses pertinentes
+* Architecture claire
+* Code documenté
+
+---
+
+## 11. Évolutions possibles
+
+* Ajout de QCM
+* Mode hors-ligne partiel
+* Statistiques avancées
+* Version mobile
