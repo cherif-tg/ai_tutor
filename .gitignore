@@ -43,7 +43,7 @@ desktop.ini
 
 # ─── Jupyter ──────────────────────────────────────────────────────────────────
 .ipynb_checkpoints/
-*.ipynb
+#*.ipynb
 
 # ─── Fichiers volumineux optionnels ───────────────────────────────────────────
 # (décommenter si le modèle dépasse 100 MB)
