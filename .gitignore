@@ -48,3 +48,5 @@ desktop.ini
 # ─── Fichiers volumineux optionnels ───────────────────────────────────────────
 # (décommenter si le modèle dépasse 100 MB)
 # models/*.pkl
+#--Fichiers pdf
+*.pdf

@@ -12,3 +12,7 @@ python-dotenv
 PyMuPDF
 numpy
 pandas
+pydf
+transformers
+datasets
+scikit-learn
